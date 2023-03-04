@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe data objek</title>
+</head>
+<body>
+    <script>
+        const orang = {};
+
+        //Menambah atau mengubah
+        orang["nama"] = "Duta Alif Gunawan";
+        orang["alamat"] = "Surabaya";
+        orang["umur"] = 30;
+
+        delete orang["umur"];
+
+        console.table(orang);
+
+        //Membuat objek dengan properties
+
+        const hewan = {
+            nama : "Kucing",
+            jenis_kelamin : "Laki laki"
+        };
+        console.table(hewan);
+
+        //Mengakses property objek
+        console.info(`Nama : ${orang.nama}`)
+        console.info(`Alamat : ${orang.alamat}`)
+
+    </script>
+</body>
+</html>
